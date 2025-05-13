@@ -2,7 +2,7 @@
 A simple snake game made using lua and love2d
 
 # Requirements
-- Code compiler (eg. [VsCode](https://code.visualstudio.com/))
+- Code compiler (eg. [VsCode](https://code.visualstudio.com/)) (optional)
 - [Lua 5.4](https://www.python.org/downloads/)
 - [Love2D] ()
 
