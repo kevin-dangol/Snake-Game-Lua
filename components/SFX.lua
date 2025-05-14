@@ -4,14 +4,20 @@ function SFX()
 
     local effects = {
 
-        eat = love.audio.newSource("sounds/Eating.mp3", "static"),
-        death = love.audio.newSource("sounds/Death.mp3", "static")
+        bgs = love.audio.newSource("sounds/Background.ogg", "static"),
+        eat = love.audio.newSource("sounds/Eating.ogg", "static"),
+        death = love.audio.newSource("sounds/Death.ogg", "static")
 
     }
 
     return{
 
         fx_played = false,
+        effects.bgs:setLooping(true),
+        effects.bgs:setVolume(0.1),
+        effects.eat:setVolume(0.2),
+        effects.death:setVolume(0.2),
+        effects.bgs:play(),
 
         setFXPlayed = function(self, has_played)
             self.fx_played = has_played
